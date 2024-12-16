@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="m-auto py-4">
-        <h1 class="text-center text-white font-bold display-4 mb-4">Visualizar</h1>
-        <hr class="bg-light">
+        <h1 class="text-center text-dark font-weight-bold display-4 mb-4">Visualizar Vendedor</h1>
+        <hr class="bg-secondary">
     </div>
 
     <div class="col-10 m-auto table-responsive">
-        <table class="table table-hover table-bordered text-white">
+        <table class="table table-hover table-bordered text-dark">
             <thead class="thead-dark text-center">
                 <tr>
                     <th scope="col">Id</th>
@@ -26,9 +26,10 @@
                     <td class="align-middle">{{ $seller->telefone }}</td>
                     <td class="align-middle">{{ $seller->status }}</td>
                 </tr>
+            </tbody>
         </table>
-        <div>
-            <a href="{{ route('sellers.index') }}" class="btn btn-outline-danger">
+        <div class="text-center mt-4">
+            <a href="{{ route('sellers.index') }}" class="btn btn-outline-secondary btn-lg">
                 Voltar
             </a>
         </div>

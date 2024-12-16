@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="m-auto py-4">
-        <h1 class="text-center text-white font-bold display-4 mb-4">Visualizar</h1>
-        <hr class="bg-light">
+        <h1 class="text-center text-dark font-weight-bold display-4 mb-4">Visualizar Ticket</h1>
+        <hr class="bg-secondary">
     </div>
 
     <div class="col-10 m-auto table-responsive">
-        <table class="table table-hover table-bordered text-white">
+        <table class="table table-bordered table-hover text-dark">
             <thead class="thead-dark text-center">
                 <tr>
                     <th scope="col">Id</th>
@@ -28,12 +28,10 @@
                 </tr>
             </tbody>
         </table>
-        <div>
-            <a href="{{ url('tickets') }}" class="btn btn-outline-danger btn-lg">
+        <div class="text-center mt-4">
+            <a href="{{ url('tickets') }}" class="btn btn-outline-secondary btn-lg">
                 Voltar
             </a>
         </div>
     </div>
-
-
 @endsection

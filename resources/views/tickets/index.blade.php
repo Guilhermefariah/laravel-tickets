@@ -2,13 +2,12 @@
 
 @section('content')
     <div class="m-auto py-4">
-        <h1 class="text-center text-white font-bold display-4 mb-4">Lista de Tickets</h1>
-        <hr class="bg-light">
+        <h1 class="text-center text-dark font-weight-bold display-4 mb-4">Lista de Tickets</h1>
+        <hr class="bg-secondary">
     </div>
 
     <div class="col-10 m-auto table-responsive">
-        @csrf
-        <table class="table table-hover table-bordered text-white">
+        <table class="table table-hover table-bordered shadow-sm">
             <thead class="thead-dark text-center">
                 <tr>
                     <th scope="col">Id</th>
@@ -31,13 +30,13 @@
                         <td class="align-middle">
                             <div class="btn-group" role="group">
                                 <a href="{{ url("tickets/$tickets->id") }}">
-                                    <button class="btn btn-outline-primary btn-sm">Visualizar</button>
+                                    <button class="btn btn-primary btn-sm">Visualizar</button>
                                 </a>
                                 <a href="{{ url("tickets/$tickets->id/edit") }}">
-                                    <button class="btn btn-outline-success btn-sm">Editar</button>
+                                    <button class="btn btn-success btn-sm">Editar</button>
                                 </a>
                                 <a href="{{ url("tickets/$tickets->id") }}" class="js-del">
-                                    <button class="btn btn-outline-danger btn-sm">Excluir</button>
+                                    <button class="btn btn-danger btn-sm">Excluir</button>
                                 </a>
                             </div>
                         </td>
@@ -46,10 +45,12 @@
             </tbody>
         </table>
 
-        <div>
-            <a href="{{ route('tickets.create') }}" class="btn btn-success">Cadastrar Ticket</a>
-            <a href="{{ route('sellers.index') }}" class="btn btn-dark">Voltar</a>
+        <div class="mt-4">
+            <a href="{{ route('tickets.create') }}" class="btn btn-dark shadow-sm">Cadastrar Ticket</a>
+            <a href="{{ route('sellers.index') }}" class="btn btn-outline-dark shadow-sm">Voltar</a>
         </div>
-        {{ $ticket->links() }}
+        <div class="mt-3">
+            {{ $ticket->links() }}
+        </div>
     </div>
 @endsection

@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="m-auto py-4">
-        <h1 class="text-center text-white font-bold display-4 mb-4">Vendedores</h1>
+        <h1 class="text-center text-dark font-weight-bold display-4 mb-4">Vendedores</h1>
         <hr class="bg-light">
     </div>
 
     <div class="col-10 m-auto table-responsive">
         @csrf
-        <table class="table table-hover table-bordered text-white">
+        <table class="table table-hover table-bordered text-dark">
             <thead class="thead-dark text-center">
                 <tr>
                     <th scope="col">Id</th>
@@ -30,20 +30,14 @@
                         <td class="align-middle">{{ $sellers->status }}</td>
                         <td class="align-middle">
                             <div class="btn-group" role="group">
-                                <a href="{{ url("sellers/$sellers->id") }}">
-                                    <button class="btn btn-outline-primary btn-sm">
-                                        Visualizar
-                                    </button>
+                                <a href="{{ url("sellers/$sellers->id") }}" class="btn btn-primary btn-sm" aria-label="Visualizar">
+                                    Visualizar
                                 </a>
-                                <a href="{{ url("sellers/$sellers->id/edit") }}">
-                                    <button class="btn btn-outline-success btn-sm">
-                                        Editar
-                                    </button>
+                                <a href="{{ url("sellers/$sellers->id/edit") }}" class="btn btn-success btn-sm" aria-label="Editar">
+                                    Editar
                                 </a>
-                                <a href="{{ url("sellers/$sellers->id") }}" class="js-del">
-                                    <button class="btn btn-outline-danger btn-sm">
-                                        Excluir
-                                    </button>
+                                <a href="{{ url("sellers/$sellers->id") }}" class="js-del btn btn-danger btn-sm" aria-label="Excluir">
+                                    Excluir
                                 </a>
                             </div>
                         </td>
@@ -52,10 +46,11 @@
             </tbody>
         </table>
 
-        <div>
-            <a href="{{ route('sellers.create') }}" class="btn btn-primary">Cadastrar Vendedor</a>
+        <div class="mt-4">
+            <a href="{{ route('sellers.create') }}" class="btn btn-dark shadow-sm">Cadastrar Vendedor</a>
             <a href="{{ route('tickets.index') }}" class="btn btn-warning text-white">Tickets</a>
         </div>
+
         {{ $seller->links() }}
     </div>
 @endsection
