@@ -35,9 +35,10 @@
                                 <a href="{{ url("tickets/$tickets->id/edit") }}">
                                     <button class="btn btn-success btn-sm">Editar</button>
                                 </a>
-                                <a href="{{ url("tickets/$tickets->id") }}" class="js-del">
-                                    <button class="btn btn-danger btn-sm">Excluir</button>
-                                </a>
+                                <form action="{{ url("tickets/$tickets->id") }}" method="POST">
+                                    @method('DELETE')
+                                    <button type="submit" class="js-del btn btn-danger btn-sm">Excluir</button>
+                                </form>
                             </div>
                         </td>
                     </tr>

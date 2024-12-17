@@ -65,7 +65,7 @@ class SellerController extends Controller
 
     public function destroy(string $id)
     {
-        $del= $this->objSeller->destroy($id);
-        return ($del) ? 'SIM' : 'NÃO';	
+        $this->objSeller->destroy($id);
+        return redirect('sellers');
     }
 }

@@ -64,7 +64,7 @@ class TicketController extends Controller
 
     public function destroy(string $id)
     {
-        $del= $this->objTicket->destroy($id);
-        return ($del) ? 'SIM' : 'NÃO';
+        $this->objTicket->destroy($id);
+        return redirect('tickets');
     }
 }

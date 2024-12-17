@@ -36,9 +36,12 @@
                                 <a href="{{ url("sellers/$sellers->id/edit") }}" class="btn btn-success btn-sm" aria-label="Editar">
                                     Editar
                                 </a>
-                                <a href="{{ url("sellers/$sellers->id") }}" class="js-del btn btn-danger btn-sm" aria-label="Excluir">
-                                    Excluir
-                                </a>
+                                <form action="{{ url("sellers/$sellers->id") }}" method="POST">
+                                    @method('DELETE')
+                                    <button type="submit" class="js-del btn btn-danger btn-sm" aria-label="Excluir">
+                                        Excluir
+                                    </button>
+                                </form>
                             </div>
                         </td>
                     </tr>
