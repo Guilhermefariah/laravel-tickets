@@ -7,7 +7,6 @@
     </div>
 
     <div class="col-10 m-auto table-responsive">
-        @csrf
         <table class="table table-hover table-bordered text-dark">
             <thead class="thead-dark text-center">
                 <tr>
