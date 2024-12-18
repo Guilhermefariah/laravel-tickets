@@ -1,4 +1,4 @@
-# Projeto CRUD Laravel
+# 🐘 Projeto CRUD Laravel
 
 Este é um projeto de CRUD (Create, Read, Update, Delete) desenvolvido em Laravel, um framework PHP popular para construir aplicações web robustas e escaláveis.
 
@@ -8,6 +8,8 @@ Este é um projeto de CRUD (Create, Read, Update, Delete) desenvolvido em Larave
 *   Visualização de tickets com detalhes
 *   Edição de tickets
 *   Exclusão de tickets com confirmação
+*   Cadastro de vendedores com nome, e-mail, telefone e status
+*   Visualização de vendedores com detalhes
 
 ## Tecnologias utilizadas
 
@@ -19,8 +21,8 @@ Este é um projeto de CRUD (Create, Read, Update, Delete) desenvolvido em Larave
 
 ## Instalação
 
-1.  Clone o repositório: `git clone https://github.com/seu-usuario/projeto-crud-laravel.git`
-2.  Acesse o diretório do projeto: `cd projeto-crud-laravel`
+1.  Clone o repositório: `git clone https://github.com/Guilhermefariah/laravel-tickets.git`
+2.  Acesse o diretório do projeto: `cd laravel-tickets`
 3.  Instale as dependências: `composer install`
 4.  Configure o arquivo `.env` com as credenciais do banco de dados
 5.  Execute as migrations: `php artisan migrate`
@@ -33,6 +35,8 @@ Este é um projeto de CRUD (Create, Read, Update, Delete) desenvolvido em Larave
 3.  Visualize os tickets cadastrados na página inicial
 4.  Edite um ticket clicando no botão "Editar"
 5.  Exclua um ticket clicando no botão "Excluir" e confirmando a ação
+6.  Cadastre um novo vendedor preenchendo os campos nome, e-mail, telefone e status
+7.  Visualize os vendedores cadastrados na página inicial
 
 ## Contribuição
 
