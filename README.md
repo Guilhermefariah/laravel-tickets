@@ -2,6 +2,8 @@
 
 Este é um projeto de CRUD (Create, Read, Update, Delete) desenvolvido em Laravel, um framework PHP popular para construir aplicações web robustas e escaláveis.
 
+![Laravel](/public/assets/img/project.jpg)
+
 ## Funcionalidades
 
 *   Cadastro de tickets com assunto, descrição, data de criação e status
